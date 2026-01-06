@@ -5,6 +5,7 @@
     --text-color: #efe8e8;
     --primary: #b9dbdb;
     --secondary: #a5ab98;
+    --tertiary: #a28c91;
     --accent: #e1e4b0;
 }
 
@@ -14,6 +15,7 @@ html {
     color: var(--text-color);
     max-width: 800px;
     scroll-behavior: smooth;
+    scroll-margin-top: 100px;
     margin: auto;
 }
 
@@ -29,6 +31,7 @@ nav {
 a {
     color: var(--accent);
     text-decoration: none;
+    border-bottom: 2px solid transparent;
 }
 
 a.nav-home {
@@ -39,7 +42,6 @@ a.nav-link {
     margin: 0 0 0.7rem 1rem;
     font-size: large;
     text-decoration: none;
-    border-bottom: 2px solid transparent;
     transition: border-color 0.3s ease;
 }
 
@@ -53,7 +55,7 @@ a.nav-icon:hover{
     transform: translateY(-5px);
 }
 
-a.nav-link:hover {
+a:hover {
     border-color: var(--accent);
 }
 
@@ -63,8 +65,8 @@ a.nav-link:hover {
 }
 
 h1 {
-    margin-bottom: 0.5rem;
     line-height: 1;
+    margin-bottom: 0.5rem;
     font-size: xxx-large;
     color: var(--primary)
 }
@@ -77,10 +79,94 @@ h2 {
 }
 
 h3 {
+    line-height: 1;
+    margin-bottom: 0.5rem;
     font-size: x-large;
-    color: var(--secondary);
+    color: var(--tertiary);
 }
 
 b {
     color: var(--accent);
+}
+
+p.subtitle {
+    font-size: large;
+}
+
+.tech-grid {
+    display: grid;
+    padding: 0rem 2rem;
+    grid-template-columns: auto auto auto;
+}
+
+.pl-grid {
+    display: grid;
+    padding: 0rem 2rem;
+    grid-template-columns: auto auto auto auto;
+}
+
+.proj-grid {
+    display: grid;
+    padding: 0rem 2rem;
+    grid-template-columns: auto auto;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+}
+
+.proj-grid-item {
+    display: flex;
+    flex-direction: column;
+    /* padding: 1rem; */
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+    border: 0.3rem solid transparent;
+    border-radius: 2rem;
+    transition: border-color 0.2s ease;
+}
+
+.proj-grid-item img {
+    height: 10rem;
+    padding: 1rem 1rem 0 1rem;
+}
+
+.proj-grid-item:hover {
+    border-color: var(--primary);
+}
+
+.grid-item i {
+    font-size: xx-large;
+}
+
+.grid-item p {
+    line-height: 1;
+    margin: 1rem 0 0 0;
+}
+
+.godot-icon {
+    width: 2rem;
+    height: auto;
+}
+
+section {
+    scroll-margin-top: 2rem;
+}
+
+footer {
+    text-align: center;
+}
+
+.pdf-embed {
+    display: block;
+    border: none;
+    aspect-ratio: 1/1.414;
+    height: 800px;
+    width: 100%;
 }
