@@ -2,6 +2,7 @@
 
 :root {
     --bg-color: #0d0908;
+    --lighter-bg: #292525; 
     --text-color: #efe8e8;
     --primary: #b9dbdb;
     --secondary: #a5ab98;
@@ -120,7 +121,7 @@ p.subtitle {
     text-align: center;
 }
 
-.proj-grid-item {
+.proj-card {
     display: flex;
     flex-direction: column;
     /* padding: 1rem; */
@@ -130,14 +131,20 @@ p.subtitle {
     border: 0.3rem solid transparent;
     border-radius: 2rem;
     transition: border-color 0.2s ease;
+
+    font-family: inherit;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-size: large;
 }
 
-.proj-grid-item img {
+.proj-card img {
     height: 10rem;
     padding: 1rem 1rem 0 1rem;
 }
 
-.proj-grid-item:hover {
+.proj-card:hover {
+    cursor: pointer;
     border-color: var(--primary);
 }
 
@@ -169,4 +176,42 @@ footer {
     aspect-ratio: 1/1.414;
     height: 800px;
     width: 100%;
+}
+
+dialog {
+    border: none;
+    border-radius: 8px;
+    padding: 2rem;
+    /* aspect-ratio: 16/9; */
+    width: 700px;
+
+    background-color: var(--lighter-bg);
+    color: var(--text-color);
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+dialog[open] {
+    animation: fade-in 0.3s ease-out;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    aspect-ratio: 1;
+    margin: 0;
+    line-height: 1;
+    font-size: x-large;
+    background-color: inherit;
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
 }

@@ -40,7 +40,7 @@ EMAIL: luotingz@uci.edu
 
     <section id='about'>
       <h2>About</h2>
-      Hello! I'm Lucas Zhong. I currently work as <b>Student Helpdesk IT</b> for the School of Social Sciences for UC Irvine, and serve as a <b>Production Officer</b> for the <a href="https://vgdc-uci.com/">Video Game Development Club (VGDC)</a>. Some of my current interests include research into AI applications, game UI/UX design, and game level design. I hope to learn a lot about creating immersive and awesome user experiences in one of my current classes, IN4MATX 133 at UCI!
+      Hello! I'm Lucas Zhong. I currently work as <b>Student Helpdesk IT</b> for the School of Social Sciences for UC Irvine, and serve as a <b>Production Officer</b> for the <a href="https://vgdc-uci.com/">Video Game Development Club (VGDC)</a>. Some of my current interests include research into AI applications, game UI/UX design, and game level design. I hope to learn a lot about creating immersive and awesome user experiences in one of my current classes, IN4MATX 133!
 
       <p>As of right now, some of the <b>technologies</b> I'm familiar with are listed below:</p>
 
@@ -126,23 +126,34 @@ EMAIL: luotingz@uci.edu
       <h2>Projects</h2>
       <h3>Software</h3>
       <div class="proj-grid">
-        <div class="proj-grid-item">
-          <img src="pork.png">
+        <button onclick="openDialog('student-assistant')" class="proj-card">
+          <img src="pork.png" alt="Student Assistant Screenshot">
           <h4>Student Assistant</h4>
-        </div>
-        <div class="proj-grid-item">
+        </button>
+        <button onclick="openDialog('search-engine')" class="proj-card">
           <img src="pork.png">
-          <h4>Web Crawler</h4>
-        </div>
-        <div class="proj-grid-item">
+          <h4>Search Engine</h4>
+        </button>
+        <button onclick="openDialog('chip-emulator')" class="proj-card">
           <img src="pork.png">
           <h4>Chip-8 Emulator</h4>
-        </div>
-        <div class="proj-grid-item">
+        </button>
+        <button onclick="openDialog('micromouse')" class="proj-card">
           <img src="pork.png">
           <h4>Micromouse</h4>
-        </div>
+        </button>
       </div>
+
+      <dialog id="proj-dialog" class="proj-modal">
+        <div class="dialog-content">
+          <button class="close-btn" onclick="closeDialog()">
+            <i class='bx bx-x-circle'></i>
+          </button>
+          <h2 id="dialog-title">Project Name</h2>
+          <p id="dialog-desc">Here is a detailed description of the project...</p>
+          <!-- <img src="pork.png" alt="Detail view"> -->
+        </div>
+      </dialog>
     </section>
 
     <section id="fun">
@@ -164,40 +175,38 @@ EMAIL: luotingz@uci.edu
       </ul>
 
       <h3>Games I've programmed</h3>
-      <div class="proj-grid">
-        <div class="proj-grid-item">
-          <img src="pork.png">
-          <h4>Underwatertale</h4>
-        </div>
-        <div class="proj-grid-item">
-          <img src="pork.png">
-          <h4>Nurture Island</h4>
-        </div>
-        <div class="proj-grid-item">
-          <img src="pork.png">
-          <h4>Slop Trough</h4>
-        </div>
-        <div class="proj-grid-item">
-          <img src="pork.png">
-          <h4>Lost to Space</h4>
-        </div>
-      </div>
+      <ul>
+        <li>
+          <a href="https://24lemon.itch.io/underwatertale" target="_blank">Underwatertale, VGDC F24-W25 pitch project</a>
+        </li>
+        <li>
+          <a href="https://24lemon.itch.io/nurture-island" target="_blank">Nurture Island, VGDC S25 ZotJam </a>
+        </li>
+        <li>
+          <a href="https://24lemon.itch.io/sloptrough" target="_blank">Sloptrough, a dream game idea, F25 ZotJam</a>
+        </li>
+        <li>
+          <a href="https://24lemon.itch.io/lost-to-space" target="_blank">Lost to Space, VGDC W24-S24 pitch project</a>
+        </li>
+      </ul>
 
       <h3>Games I've managed/produced</h3>
-      <div class="proj-grid">
-        <div class="proj-grid-item">
-          <img src="pork.png">
-          <h4>Time Heist</h4>
-        </div>
-        <div class="proj-grid-item">
-          <img src="pork.png">
-          <h4>AI VS. ARTISTS</h4>
-        </div>
-      </div>
+      <ul>
+        <li>
+          <p style="line-height: 0;">Time Heist, 2025-26 capstone project</p>
+        </li>
+        <li>
+          <p style="line-height: 0;">BREAKER, 2025-26 capstone project</p>
+        </li>
+        <li>
+          <a href="https://zoyasaus.itch.io/ai-vs-artists" target="_blank">AI VS. ARTISTS, VGDC F25 partner project</a>
+        </li>
+      </ul>
     </section>
   </main>
   <footer>
     <p>Lucas Zhong | INF 133 W2026</p>
   </footer>
 </body>
+<script src="main.js"></script>
 </html>
