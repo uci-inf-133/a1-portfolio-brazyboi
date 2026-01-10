@@ -97,19 +97,25 @@ p.subtitle {
 .tech-grid {
     display: grid;
     padding: 0rem 2rem;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 2fr));
+    justify-content: center; 
+    width: 100%
 }
 
 .pl-grid {
     display: grid;
     padding: 0rem 2rem;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(min(160px, 100%), 1fr));
+    justify-content: center;
+    width: 100%;
 }
 
 .proj-grid {
     display: grid;
     padding: 0rem 2rem;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
+    justify-content:center;
+    width: 100%;
 }
 
 .grid-item {
@@ -118,6 +124,7 @@ p.subtitle {
     padding: 1rem;
     margin: 0;
     justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
@@ -131,6 +138,7 @@ p.subtitle {
     border: 0.3rem solid transparent;
     border-radius: 2rem;
     transition: border-color 0.2s ease;
+    align-items: center;
 
     font-family: inherit;
     background-color: var(--bg-color);
@@ -139,7 +147,10 @@ p.subtitle {
 }
 
 .proj-card img {
-    height: 10rem;
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
     padding: 1rem 1rem 0 1rem;
 }
 
