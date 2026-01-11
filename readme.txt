@@ -48,7 +48,7 @@ N/A
 
 
 4. How long, in hours, did it take you to complete this assignment?
-5-6 hours
+9-10 hours
 
 
 5. What online resources did you consult when completing this assignment? (list specific URLs, describe queries to Generative AI, or use of AI-based code completion)
