@@ -23,33 +23,49 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 2. What (a) basic features, (b) CSS features, and (c) advanced features did you include in your portfolio?
 
 (a) Basic features
-
-
+- Multiple images, with descriptive alt attributes 
+- headings + paragraph text
+- links to external pages
+- 2 pages, one home page, one page for the resume
+- footer, nav
+- custom icons from Boxicons
 
 (b) CSS features
-
-
+- padding and margin modified for responsiveness
+- modified colors for links, had general color palette
+- used flexbox to better orient things on the page
+- custom font: Fira Sans
 
 (c) Advanced features
-
-
-
+- used CSS to create grid that resizes dynamically with the screen width (resizes, and also changes number of rows/columns)
+- navbar
+- embedded a pdf viewer, with a <noembed> fallback
+- nested selectors were used, for example the images within the proj-items
+- dialog popup box for the project decsriptions
 
 3. Did you ignore any of the warnings or errors presented by the accessibility checker? If so, why does this not seem like an accessibility concern? If it's useful, you can consolidate your thoughts on multiple warnings/errors if the rationale is similar.
-
+N/A
 
 
 4. How long, in hours, did it take you to complete this assignment?
-
+5-6 hours
 
 
 5. What online resources did you consult when completing this assignment? (list specific URLs, describe queries to Generative AI, or use of AI-based code completion)
+Used a lot of W3Schools and Mozilla's MDN for CSS documentation:
+https://developer.mozilla.org/en-US/docs/Web/CSS
+https://www.w3schools.com/css/css_grid.asp
+Particular things were keyframes, css's grid and flexbox, as well as transitions. 
 
+To create the dialog box:
+https://www.w3schools.com/howto/howto_css_modals.asp
+https://www.geeksforgeeks.org/javascript/how-to-create-a-modal-box-using-html-css-and-javascript/
 
+Google Fonts for my font: 
+https://fonts.google.com/specimen/Fira+Sans
 
 6. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
-
-
+N/A
 
 7. Is there anything special we need to know in order to run your code?
-
+Just open index.html, and it should work.
