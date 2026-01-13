@@ -99,7 +99,8 @@ p.subtitle {
     padding: 0rem 2rem;
     grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 2fr));
     justify-content: center; 
-    width: 100%
+    width: 100%;
+    gap: 2rem;
 }
 
 .pl-grid {
@@ -159,11 +160,13 @@ p.subtitle {
     border-color: var(--primary);
 }
 
-.grid-item i {
+.grid-it span {
+    /* height: auto;
+    width: 2rem; */
     font-size: xx-large;
 }
 
-.grid-item p {
+.grid-it p {
     line-height: 1;
     margin: 1rem 0 0 0;
 }
